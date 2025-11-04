@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      width: 500px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 20px;
+      color: #00e0ff;
+    }
+    input {
+      width: 85%;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 8px;
+      padding: 8px 14px;
+      background: #1f7695;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+      text-align: left;
+    }
+    li {
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 2px 4px;
+      margin: 2px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+    }
+    .done span {
+      text-decoration: line-through;
+      color: #777;
+    }
+    .delete-btn {
+      border: none;
+      background: transparent;
+      color: red;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <input type="text" id="taskInput" placeholder="Add a task" />
+    <br />
+    <button id="addBtn" onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="m.js"></script>
+</body>
+</html>

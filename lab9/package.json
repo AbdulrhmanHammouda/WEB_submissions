@@ -1,0 +1,17 @@
+{
+  "name": "node2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb-memory-server": "^11.0.1",
+    "mongoose": "^9.0.0",
+    "nodemon": "^3.1.11"
+  }
+}
